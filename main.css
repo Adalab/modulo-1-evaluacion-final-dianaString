@@ -2,6 +2,7 @@
 
 :root {
     /* colors */
+    --clr-primary-btn: #7cb140;
     --clr-primary: #6c933e;
     --clr-soft-primary: #d9e4cc;
     --clr-dark: #4a4a4a;
@@ -217,6 +218,7 @@
     margin-top: 35px;
 }
 
+/* footer */
 .footer {
     background-color: var(--clr-dark);
     color: var(--clr-light);
@@ -259,4 +261,31 @@
     color: var(--clr-primary);
 }
 
+/* Animations */
 
+.categories__arrowButton, .hero__arrowButton{
+    transition: transform 0.5s;
+}
+
+.hero__arrowButton:hover {
+    transform:translateY(30%);
+}
+
+.categories__arrowButton:hover{
+    transform:translateY(-20%);
+} 
+
+/* comprar */
+.description__button:hover {
+    background-color: var(--clr-primary-btn);
+    color: var(--clr-light);
+}
+
+/* empezar ahora */
+.categories__button:hover {
+    background-color: var(--clr-primary-btn);
+}
+
+.description__button,.categories__button {
+    transition: background-color 0.1s, color 0.1s;
+}
