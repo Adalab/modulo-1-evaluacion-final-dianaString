@@ -5,9 +5,9 @@ Debe incluir lo siguiente:
 
 General
 --
-- 🔲 Una estructura adecuada de ficheros y carpetas, bien enlazadas.__*__
+- ☑️ Una estructura adecuada de ficheros y carpetas, bien enlazadas.__*__
 - ☑️ Uso de control de versiones con ramas.
-- 🔲 Incluir el starter kit de Adalab.
+- ☑️ Incluir el [starter kit de Adalab](https://github.com/Adalab/Adalab-web-starter-kit).
 
 HTML
 --
@@ -18,9 +18,9 @@ HTML
 CSS / Sass
 --
 - ☑️ Código perfectamente indentado.__*__
-- 🔲 Código Sass con sintaxis correcta, bien estructurada.__*__
-- 🔲 Características de Sass como variables, anidación y parciales.__*__
-- 🔲 CSS sin selectores de etiqueta ni de id.__*__
+- ☑️ Código Sass con sintaxis correcta, bien estructurada.__*__
+- ☑️ Características de Sass como variables, anidación y parciales.__*__
+- ☑️ CSS sin selectores de etiqueta ni de id.__*__
 - ☑️ Selectores de clase en inglés.__*__
 - ☑️ Seguir el correcto modelo de caja de CSS, especificando tamaño, relleno y márgenes.__*__
 - ☑️ Estilos de texto y fondo para distintos tipos de elementos.
@@ -38,8 +38,8 @@ ___*Criterios clave___
 
 
 #### La evaluación solo se considerará terminada cuando:
-- 🔲 Esté publicada en GitHub Pages y sea funcional.
-- 🔲  El enlace a GitHub Pages debe estar en el apartado "About" del repositorio.
+- ☑️ Esté publicada en GitHub Pages y sea funcional.
+- ☑️ El enlace a GitHub Pages debe estar en el apartado "About" del repositorio.
 
 <br>
 
