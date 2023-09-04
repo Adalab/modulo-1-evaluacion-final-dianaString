@@ -1,0 +1,28 @@
+/* Animations */
+
+.categories__arrowButton, .hero__arrowButton{
+    transition: transform 0.5s;
+}
+
+.hero__arrowButton:hover {
+    transform:translateY(30%);
+}
+
+.categories__arrowButton:hover{
+    transform:translateY(-20%);
+} 
+
+/* comprar */
+.description__button:hover {
+    background-color: $clr-primary-btn;
+    color: $clr-light;
+}
+
+/* empezar ahora */
+.categories__button:hover {
+    background-color: $clr-primary-btn;
+}
+
+.description__button, .categories__button {
+    transition: background-color 0.3s, color 0.2s;
+}

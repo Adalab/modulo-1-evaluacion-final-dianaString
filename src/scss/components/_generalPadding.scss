@@ -1,0 +1,13 @@
+/* Main */
+
+/* todos los hijos directos de main que no sean imágenes tienen un padding lateral de 15px */
+.main > :not(img) {
+    padding-inline: 17px;
+
+    @media(min-width:$tablet){
+        padding-inline: 37.1px;
+    }
+    @media(min-width:$desktop){
+        padding-inline: 170px;
+    }
+}

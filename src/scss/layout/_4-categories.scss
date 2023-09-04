@@ -1,0 +1,109 @@
+/* categories */
+
+.categories {
+    background-color: $clr-light-primary;
+    padding-top: 18px;
+    text-align: center;
+    padding-bottom: 50px;
+
+    @media(min-width:$tablet){
+        padding-top: 27px;
+        padding-bottom: 60px;
+    } 
+
+    &__subTitle {
+        color: $clr-medium;
+        font-family: $ff-title;
+        font-size: 1.2rem;
+        margin-bottom: 2px;
+    
+        @media(min-width:$tablet){
+            margin-bottom: 4px;
+        } 
+    }
+
+    &__title {
+        font-family: $ff-title;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    
+        @media(min-width:$tablet){
+            font-size: 2.8rem;
+        } 
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 12px;
+        margin-bottom: 30px;
+    
+        @media(min-width:$tablet){
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            gap: 10px;
+            margin-bottom: 30px;
+        } 
+    }
+
+    &__item {
+        display: grid;
+        grid-template-rows: 4fr 1fr;
+        justify-items: center;
+        gap: 3px;
+
+        &-img {
+            display: block;
+            width: 100px;
+            height: 105px;
+            border-radius: 50%;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        
+            @media(min-width:$tablet){
+                width: 120px;
+                height: 125px;
+            } 
+        }
+
+        &-title {
+            font-family: $ff-title;
+            font-size: 1.4rem;
+            
+            @media(min-width:$tablet){
+                font-size: 1.8rem;
+            } 
+        }
+    }
+
+    &__button {
+        background-color: $clr-primary;
+        color: $clr-light;
+        font-family: $ff-content;
+        font-weight: $medium;
+        font-size: 2rem;
+        padding: 10px 30px;
+        text-decoration: none;
+        border-radius: 100px;
+    }
+
+    &__arrowButton {
+        background-color: $clr-light;
+        width: 45px;
+        height: 45px;
+        @include flexDisplay(center, center);
+        border-radius: 50%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin-inline: auto;
+        margin-top: 35px;
+    
+        @media(min-width:$tablet){
+            margin-top: 46px;
+        } 
+    }
+}
