@@ -2,10 +2,12 @@
 
 :root {
     /* colors */
-    --clr-primary-btn: #7cb140;
     --clr-primary: #6c933e;
-    --clr-soft-primary: #d9e4cc;
+    --clr-primary-btn: #7cb140;
+    --clr-light-primary: #d9e4cc;
+    --clr-darkest: #000000;
     --clr-dark: #4a4a4a;
+    --clr-medium: #626262;
     --clr-light: #ffffff;
 
     /* fonts */
@@ -14,10 +16,14 @@
 
     --regular: 400;
     --medium: 500;
-    --bold: 800;
 
     font-family: var(--ff-content);
     font-size: 62.5%;
+}
+
+html {
+    color: var(--clr-darkest);
+    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -68,6 +74,7 @@
     text-transform: uppercase;
     line-height: 50px;
     margin-bottom: 36px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .hero__desc {
@@ -137,7 +144,7 @@
 /* categories */
 
 .categories {
-    background-color: var(--clr-soft-primary);
+    background-color: var(--clr-light-primary);
     padding-top: 18px;
     text-align: center;
 
@@ -145,7 +152,7 @@
 }
 
 .categories__subTitle {
-    color: var(--clr-dark);
+    color: var(--clr-medium);
     font-family: var(--ff-title);
     font-size: 1.2rem;
 
@@ -164,7 +171,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
+    gap: 12px;
 
     margin-bottom: 30px;
 }
@@ -176,7 +183,7 @@
     gap: 3px;
 }
 
-.categories__item img {
+.categories__item-img {
     display: block;
     width: 100px;
     height: 105px;
@@ -184,7 +191,7 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.categories__item h4 {
+.categories__item-title {
     font-family: var(--ff-title);
     font-size: 1.4rem;
 }
@@ -233,7 +240,7 @@
 }
 
 /* todos los hijos directos de .moreCategories y .social */
-.moreCategories >*, .social>* {
+.moreCategories >*, .social >* {
     list-style-type: none;
     text-transform: uppercase;
     font-family: var(--ff-content);
@@ -242,7 +249,7 @@
     padding-bottom: 26px;
 }
 
-.moreCategories a, .social a {
+.moreCategories__link, .social__link {
     color: var(--clr-light);
     text-decoration: none;
 }
@@ -284,7 +291,7 @@
 }
 
 .description__button,.categories__button {
-    transition: background-color 0.1s, color 0.1s;
+    transition: background-color 0.3s, color 0.2s;
 }
 
 /* Media Queries */
@@ -363,7 +370,7 @@
         margin-bottom: 30px;
     }
 
-    .categories__item img {
+    .categories__item-img {
         display: block;
         width: 120px;
         height: 125px;
@@ -371,7 +378,7 @@
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
 
-    .categories__item h4 {
+    .categories__item-title {
         font-size: 1.8rem;
     }
 
