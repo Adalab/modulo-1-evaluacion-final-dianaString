@@ -1,0 +1,12 @@
+/* Header */
+
+.hamburger {
+  background-color: $clr-primary;
+  width: 36.4px;
+  height: 36.4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top:0;
+}
